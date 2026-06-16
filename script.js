@@ -1,7 +1,6 @@
 let container = document.getElementById('countries');
 
 async function loadCountries() {
-    // Definujeme proměnnou html uvnitř funkce, aby se při opakovaném volání nezdvojovala
     let html = ``;
     const url = "countries.json";
 
@@ -18,10 +17,8 @@ async function loadCountries() {
             const currencies = country.currencies ? Object.values(country.currencies)
                 .map(currency => `${currency.name} (${currency.symbol})`)
                 .join(', ') : 'N/A';
-            // Oprava pro capital: join() lze volat jen na poli
             const capital = country.capital && Array.isArray(country.capital) ? country.capital.join(', ') : 'N/A';
 
-            // --- ZMĚNA STRUKTURY ZDE ---
             html += `
                 <div class="country-card">
                     <h2 class="card-title card-title-top">${country.name.common}</h2>
@@ -44,7 +41,6 @@ async function loadCountries() {
                     </div>
                 </div>
             `;
-            // --- KONEC ZMĚNY ---
         });
 
         container.innerHTML = html;
