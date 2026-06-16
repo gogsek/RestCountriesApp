@@ -1,6 +1,6 @@
 body {
-    background-color: #0d0d12; /* Temné pozadí celé stránky */
-    color: #e0e0e0; /* Světle šedý text pro dobrou čitelnost */
+    background-color: #0d0d12;
+    color: #e0e0e0;
     padding: 20px;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -15,13 +15,13 @@ body {
 }
 
 .country-card {
-    background-color: #1a1a24; /* O něco světlejší pozadí pro samotnou kartu */
+    background-color: #1a1a24;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
-    border: 1px solid #2a2a35; /* Jemný tmavý rámeček */
+    border: 1px solid #2a2a35;
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -29,20 +29,20 @@ body {
     font-size: 24px;
     color: #ffffff;
     margin: 0;
-    text-transform: uppercase; /* Názvy velkými písmeny pro lepší styl */
+    text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .card-title-top {
     padding: 24px 24px 15px 24px;
     text-align: center;
-    text-shadow: 0 0 8px rgba(0, 240, 255, 0.3); /* Lehká záře za textem */
+    text-shadow: 0 0 8px rgba(0, 240, 255, 0.3);
 }
 
 .card-image {
     padding: 20px;
     border-bottom: 1px solid #2a2a35;
-    background-color: #121218; /* Ještě o něco tmavší prostor přímo za vlajkou */
+    background-color: #121218;
 }
 
 .card-image img {
@@ -58,7 +58,7 @@ body {
 
 .card-info p {
     font-size: 15px;
-    color: #a0a0a0; /* Tlumenější barva pro běžný text */
+    color: #a0a0a0;
     margin-bottom: 12px;
     line-height: 1.5;
     margin-top: 0;
@@ -66,17 +66,16 @@ body {
     align-items: center;
 }
 
-/* Stylování Font Awesome ikon */
 .card-info p i {
     margin-right: 12px;
     width: 25px;
     text-align: center;
-    color: #00f0ff; /* Tyrkysová barva ikon */
+    color: #00f0ff;
     text-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
 }
 
 .card-info strong {
-    color: #eeeeee; /* Světlejší barva pro popisky (např. "Capital city:") */
+    color: #eeeeee;
     font-size: 15px;
     margin-right: 6px;
 }
